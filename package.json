@@ -1,0 +1,41 @@
+{
+  "name": "webdev-workshops-grant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.3.12",
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-batch-replace": "0.0.0",
+    "gulp-bower-src": "^0.1.0",
+    "gulp-concat": "^2.4.3",
+    "gulp-html-prettify": "0.0.1",
+    "gulp-if": "^1.2.5",
+    "gulp-less": "^3.0.0",
+    "gulp-minify-css": "^0.3.13",
+    "gulp-minify-html": "^0.1.8",
+    "gulp-nunjucks-render": "^0.1.3",
+    "gulp-prettify": "^0.3.0",
+    "gulp-sourcemaps": "^1.3.0",
+    "gulp-uglify": "^1.0.2",
+    "lodash": "^3.0.0",
+    "wiredep": "^2.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "postinstall": "bower install",
+    "start": "gulp",
+    "compile": "gulp compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Palid/webdev-workshops-grant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Palid/webdev-workshops-grant/issues"
+  },
+  "homepage": "https://github.com/Palid/webdev-workshops-grant"
+}
