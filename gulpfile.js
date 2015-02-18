@@ -67,7 +67,7 @@ gulp.task('copy', function () {
 
 gulp.task('css', function () {
   return gulp.src([
-      "./src/less/*.less",
+      "./src/examples/less/*.less",
     ])
     .pipe(gulpIf(SOURCEMAPS, sourcemaps.init()))
     .pipe(less())
@@ -78,7 +78,7 @@ gulp.task('css', function () {
     .pipe(gulpIf(MINIFY, cssmin(CSS)))
     .pipe(gulpIf(MINIFY, concat('style.min.css')))
     .pipe(gulpIf(SOURCEMAPS, sourcemaps.write()))
-    .pipe(gulp.dest('./compiled/css'));
+    .pipe(gulp.dest('./compiled/examples/css'));
 });
 
 
@@ -91,20 +91,20 @@ gulp.task('scripts', function () {
     .pipe(gulp.dest('./compiled/js'));
 });
 gulp.task('html', function () {
-  nunjucksRender.nunjucks.configure(['./src/tasks/']);
-  return gulp.src('./src/tasks/**/*.html')
+  nunjucksRender.nunjucks.configure(['./src/examples', './src/tasks']);
+  return gulp.src('./src/**/*.html')
     .pipe(wiredep())
     .pipe(gulpIf(!PSEUDO_WORDPRESS_GEN, nunjucksRender(nunjucksData)))
     .pipe(gulpIf(!PSEUDO_WORDPRESS_GEN, prettifyHtml({
       ident_size: 2,
       indent_inner_html: true
     })))
-    .pipe(gulp.dest('./compiled'));
+    .pipe(gulp.dest('./compiled/'));
 });
 
 gulp.task('watch', function () {
   gulp.watch('./src/js/*.js', ['scripts']);
-  gulp.watch('./tasks/*.html', ['html']);
+  gulp.watch('./src/**/*.html', ['html']);
   gulp.watch('./src/less/*.less', ['css']);
   gulp.watch('./src/assets/*.*', ['copy']);
 });

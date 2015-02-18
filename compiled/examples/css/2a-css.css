@@ -1,0 +1,20 @@
+body {
+  color: red;
+  background-color: #008000;
+}
+p {
+  color: blue;
+}
+.hide {
+  display: none;
+}
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
