@@ -1,0 +1,29 @@
+body {
+  color: red;
+  background-color: #008000;
+}
+p {
+  color: blue;
+}
+.hide {
+  display: none;
+}
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+
+div{
+    width:200px;
+    text-align: center;
+}
+
+div span{
+    font-size:15px; font-style: italic; font-weight: bold;
+}
