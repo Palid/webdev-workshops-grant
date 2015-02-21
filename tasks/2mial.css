@@ -1,0 +1,20 @@
+body {
+    background-color: #9ACEEB;
+        color: #FF6E4A;
+    font-size: 30pt;
+    
+    
+}
+p {
+    color: #714B23
+}
+p b {
+    background-color: #714B23;
+        color: #9ACEEB
+}
+a {
+    color: #FFFF66;
+}
+a:visited {
+    color: #F00000;
+}
