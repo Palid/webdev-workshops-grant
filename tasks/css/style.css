@@ -1,0 +1,15 @@
+.half {
+width: 300px;
+    display:inline-block;    
+}
+.red {
+    color: red;
+}
+.sign {
+list-style-type: circle;
+}
+
+.left {
+float: left;
+}
+    
