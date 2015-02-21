@@ -1,0 +1,21 @@
+body {
+  background: black;
+  width: 450px;
+}
+img {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 400px;
+  background: white;
+  padding: 5px;
+}
+p {
+  padding-top: 30px;
+  padding-left: 30px;
+  font-size: 30px;
+  text-align: center;
+  width: 400px;
+  color: white;
+}
