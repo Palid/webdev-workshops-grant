@@ -1,0 +1,36 @@
+h1 {
+    color:#6A9906;
+    font-size: 50px;
+}
+body{
+    background-color: #512787;
+}
+.center {
+  text-align:center;
+  margin: 0 auto;
+}
+.right {
+    text-align:right;
+    margin: 0 auto;
+}
+.gray{
+background-color:gray;
+}
+.fade {
+  opacity: 0.5;
+}
+table {
+  border-top: 1px solid blue;
+  border-left: 2px dotted red;
+  border-bottom: 3px dashed yellow;
+  border-right: 4px double violet;
+}
+.margines{
+    margin: 10px 0px 20px 20px;
+}
+.margines_od_sciany{
+    margin-left: 25px;
+}
+.element_listy{
+    float: left;
+}

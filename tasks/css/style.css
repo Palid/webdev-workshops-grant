@@ -1,0 +1,11 @@
+h1 {
+    background-color:white;
+    color:indigo;
+    font-size: 50px;
+}
+table {
+  border-top: 1px solid blue;
+  border-left: 2px dotted red;
+  border-bottom: 3px dashed yellow;
+  border-right: 4px double violet;
+}
